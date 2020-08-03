@@ -39,7 +39,6 @@ run("Set Measurements...", "area perimeter display redirect=None decimal=3");
 showMessage("Adjust particle size accroding to the acquisition settings");
 num = getNumber("Minimum size of target particle", 1000)
 run("Analyze Particles...", "size=" + num + " display exclude clear include summarize add in_situ");
-//run("Analyze Particles...", "size=1000-Infinity display exclude clear include summarize add in_situ");
 
 //10. Saving ROIs to a .zip file
 roiManager("save", output_path + orgName + ".zip")
